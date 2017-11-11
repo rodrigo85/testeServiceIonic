@@ -1,17 +1,21 @@
 <ion-header>
- ..Profile ..
+  <ion-navbar color="primary">
+    <ion-title>
+        Confirm page 2
+    </ion-title>
+  </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="home">
     <ion-card>
         <ion-card-header>
-            What you are entering
+            Please confirm your profile
         </ion-card-header>
         <ion-card-content>
-            <ion-badge item-right>Name</ion-badge> {{ user.name }}<br/><br/>
-            <ion-badge item-right>Age</ion-badge> {{ user.age }}
+            {{ user.name }} is {{ user.age }} years old
         </ion-card-content>
     </ion-card>
+
     <ion-list>
         <ion-item>
             <ion-label fixed>Name</ion-label>
@@ -23,9 +27,9 @@
         </ion-item>
         <ion-item>
             <ion-label fixed>Sexo</ion-label>
-            <ion-input type="text" [(ngModel)] = "user.sexo"></ion-input>
+            <ion-input type="texttext" [(ngModel)] = "user.sexo"></ion-input>
         </ion-item>
     </ion-list>
 
-    <button ion-button full block (click)="goToPage2()">Go to Page 2</button>
+    <button ion-button full block (click)="goToPage1()">Go to Page 1</button>
 </ion-content>
